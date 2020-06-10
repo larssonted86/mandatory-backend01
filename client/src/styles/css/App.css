@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+  margin:0
+}
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: #ebf8ff;
+}
+
+aside {
+  display:flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 12px;
+  background: #ebf8ff;
+  box-shadow: inset 8px 8px 27px #8d9599, 
+            inset -8px -8px 27px #ffffff;
+}
+
+.content{
+  flex-grow: 1;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 12px;
+  background: #ebf8ff;
+  box-shadow: inset 8px 8px 27px #8d9599, 
+            inset -8px -8px 27px #ffffff;
+}
+
+form{
+  display: flex;
+}
+
+input{
+  height: 40px;
+  flex-grow: 1;
+  border: none;
+  border-radius: 12px;
+  background: #ebf8ff;
+  box-shadow: inset 20px 20px 40px #ccd8de, 
+            inset -20px -20px 40px #ffffff;
+}
+
+button{
+  font-size: medium;
+  font-weight: 900;
+  border: none;
+  color: grey;
+  background: none;
+}
+
+h3{
+  color: grey
+}

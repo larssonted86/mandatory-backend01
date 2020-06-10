@@ -1,0 +1,27 @@
+.chatwindow {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+.chatwindow .spacer {
+  height: 20px;
+}
+.chatwindow .chatBubble {
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  margin: 10px;
+  border-radius: 12px;
+  background: #ebf8ff;
+  box-shadow: 6px 6px 11px #d6e2e8, -6px -6px 11px #ffffff;
+}
+.chatwindow .chatBubble .chatmessage {
+  padding-left: 20px;
+  display: flex;
+  flex-grow: 1;
+}
+
+/*# sourceMappingURL=chatwindow.css.map */
