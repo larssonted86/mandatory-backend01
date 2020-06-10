@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/chatwindow.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGA;EACE;EACA;EACA","file":"chatwindow.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/chatwindow.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EACE;EAEA;;AAEF;EACE;EACA;;AAGF;EACE;EACA;;AAGF;EACE;EACA;;AAKF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGA;EACE;EACA;EACA","file":"chatwindow.css"}

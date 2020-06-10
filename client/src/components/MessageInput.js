@@ -14,7 +14,12 @@ export default function MessageInput({user}) {
 
   return (
     <form onSubmit={onSubmit}>
-      <input onChange={e => setMessage(e.target.value)} value={message} type="text" name="message" />
+      <input 
+      onChange={e => 
+      setMessage(e.target.value)} 
+      value={message} type="text" 
+      name="message"
+      placeholder='Enter message' />
       <button type="submit">Send</button>
     </form>
   );

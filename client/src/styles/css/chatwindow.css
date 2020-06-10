@@ -2,17 +2,33 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-grow: 1;
+  height: calc(100% - 40px);
 }
 .chatwindow .spacer {
-  height: 20px;
+  height: 35px;
+}
+.chatwindow .messageContainer {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+.chatwindow .messageContainer::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.chatwindow .messageContainer::-webkit-scrollbar-thumb {
+  height: 0;
+  width: 0;
+}
+.chatwindow .messageContainer::-webkit-scrollbar-track {
+  height: 0;
+  width: 0;
 }
 .chatwindow .chatBubble {
   padding-left: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 50px;
+  min-height: 50px;
   margin: 10px;
   border-radius: 12px;
   background: #ebf8ff;

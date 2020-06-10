@@ -38,6 +38,7 @@ aside {
 
 form{
   display: flex;
+  height: 40px;
 }
 
 input{

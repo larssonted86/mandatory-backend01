@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect,useRef} from 'react'
 import axios from 'axios';
 import {useParams} from 'react-router-dom';
 import {getSocket} from '../socket';
@@ -16,6 +16,11 @@ export default function Chatwindow() {
   const {rid} = useParams();
   const [roomName, setRoomName] = useState(null);
   const [messages, setMessages] = useState([]);
+  const messagesEndRef = useRef(null)
+
+  const scrollToBottom = () => {
+    messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
+  }
   
   useEffect(() => {
     axios.get(`/api/rooms/${rid}`)
@@ -38,11 +43,17 @@ export default function Chatwindow() {
       socket.off('new_message', onNewMessage);
     }
   }, [rid]);
+  
+  useEffect(scrollToBottom, [messages]);
+
   return (
     <div className='chatwindow'> 
     <h3>{roomName}</h3>
-    <span className='spacer'></span>    
-      {messages.map((message, index) => <ChatBubble key={index} message={message} />)}
+    <div className='spacer'></div>
+    <div className='messageContainer'>
+    {messages.map((message, index) => <ChatBubble key={index} message={message} />)}
+    <div ref={messagesEndRef} />
+    </div>    
     </div>
   )
 }
